@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.container{
+    max-width: 700px;
+    background-color: white;
+    border-radius: 1rem;
+    flex-direction: row;
+    overflow: hidden;
+}
+img{
+    float: left;
+    width: 50%;
+    border-radius: 1rem 0 0 1rem;
+}
+.card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+}
+.gray{
+    color: hsl(228, 12%, 48%);
+}
+.fraunces{
+    font-family: 'Fraunces', serif;
+}
+h5{
+    letter-spacing: .3rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+h1{
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+.info{
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+.prices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.current-price{
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+.old-price{
+    text-decoration: line-through;
+    padding-right: 1.4rem;
+}
+svg{
+    margin-right: 0.7rem;
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(158, 30%, 31%);
+}
+@media only screen and (max-width: 660px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        border-radius: 1rem;
+        margin: 0.7rem;
+        width: 350px;
+    }
+    img{
+        width: 100%;
+        height: 200px;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .card{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    h1, .info, .prices, h5{
+        margin-bottom: 0.8rem;
+    }
+    .card{
+        padding: 1.5rem 2rem 1rem 2rem;
+    }
+
+}
