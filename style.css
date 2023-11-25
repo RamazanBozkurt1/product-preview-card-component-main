@@ -22,6 +22,7 @@ body{
 img{
     float: left;
     width: 50%;
+    object-fit: cover;
     border-radius: 1rem 0 0 1rem;
 }
 .card{
